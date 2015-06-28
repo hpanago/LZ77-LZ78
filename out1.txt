@@ -1,0 +1,380 @@
+(dp0
+I1
+S'W'
+p1
+sI2
+S'e'
+p2
+sI3
+S' '
+p3
+sI4
+S'w'
+p4
+sI5
+S'o'
+p5
+sI6
+S'r'
+p6
+sI8
+S' i'
+p7
+sI9
+S'n'
+p8
+sI10
+S' a'
+p9
+sI11
+S' s'
+p10
+sI12
+S't'
+p11
+sI14
+S'ng'
+p12
+sI15
+S'e '
+p13
+sI16
+S'i'
+p14
+sI17
+S'nd'
+p15
+sI18
+S'u'
+p16
+sI19
+S's'
+p17
+sI21
+S'y'
+p18
+sI22
+S'.'
+p19
+sI23
+S' T'
+p20
+sI24
+S'h'
+p21
+sI25
+S'er'
+p22
+sI26
+S'e i'
+p23
+sI27
+S's '
+p24
+sI28
+S'a'
+p25
+sI29
+S' m'
+p26
+sI32
+S'hi'
+p27
+sI33
+S'g'
+p28
+sI34
+S'he'
+p29
+sI35
+S'r '
+p30
+sI37
+S'ed'
+p31
+sI38
+S' f'
+p32
+sI39
+S'or'
+p33
+sI40
+S' d'
+p34
+sI41
+S'ev'
+p35
+sI42
+S'el'
+p36
+sI44
+S'ers'
+p37
+sI45
+S' t'
+p38
+sI46
+S'ha'
+p39
+sI47
+S'n '
+p40
+sI48
+S'c'
+p41
+sI49
+S'an'
+p42
+sI50
+S' b'
+p43
+sI51
+S'e s'
+p44
+sI52
+S'at'
+p45
+sI53
+S'is'
+p46
+sI54
+S'f'
+p47
+sI55
+S'ie'
+p48
+sI56
+S'd'
+p49
+sI60
+S' de'
+p50
+sI61
+S'v'
+p51
+sI63
+S'p'
+p52
+sI64
+S'ers '
+p53
+sI65
+S'co'
+p54
+sI66
+S'm'
+p55
+sI67
+S'in'
+p56
+sI68
+S'g '
+p57
+sI70
+S'o '
+p58
+sI71
+S'th'
+p59
+sI72
+S'e f'
+p60
+sI75
+S'T'
+p61
+sI77
+S' is'
+p62
+sI78
+S' a '
+p63
+sI81
+S'l'
+p64
+sI83
+S' th'
+p65
+sI85
+S'has'
+p66
+sI87
+S'x'
+p67
+sI92
+S'ea'
+p68
+sI94
+S','
+p69
+sI95
+S' an'
+p70
+sI96
+S'd '
+p71
+sI97
+S'it'
+p72
+sI98
+S' is '
+p73
+sI101
+S'ing'
+p74
+sI102
+S' w'
+p75
+sI104
+S'e a'
+p76
+sI105
+S's t'
+p77
+sI113
+S'av'
+p78
+sI115
+S'se'
+p79
+sI117
+S'ou'
+p80
+sI118
+S's s'
+p81
+sI119
+S'ho'
+p82
+sI125
+S'le'
+p83
+sI126
+S'nt'
+p84
+sI127
+S' to'
+p85
+sI129
+S'et'
+p86
+sI130
+S' the'
+p87
+sI133
+S', '
+p88
+sI134
+S'b'
+p89
+sI135
+S'ut'
+p90
+sI136
+S' o'
+p91
+sI137
+S'ur'
+p92
+sI138
+S' in'
+p93
+sI143
+S'eal'
+p94
+sI144
+S'ly'
+p95
+sI145
+S' q'
+p96
+sI146
+S'ui'
+p97
+sI148
+S' y'
+p98
+sI153
+S't '
+p99
+sI154
+S'so'
+p100
+sI158
+S' p'
+p101
+sI159
+S'ro'
+p102
+sI161
+S'ec'
+p103
+sI168
+S'ly '
+p104
+sI173
+S' c'
+p105
+sI174
+S'om'
+p106
+sI181
+S' Th'
+p107
+sI183
+S'es'
+p108
+sI194
+S'ect'
+p109
+sI195
+S' fr'
+p110
+sI200
+S' l'
+p111
+sI208
+S'\xe2'
+p112
+sI209
+S'\x80'
+p113
+sI215
+S'me'
+p114
+sI218
+S'on'
+p115
+sI221
+S' we'
+p116
+sI226
+S'e p'
+p117
+sI231
+S't o'
+p118
+sI235
+S'ons'
+p119
+sI240
+S'y '
+p120
+sI248
+S'he '
+p121
+sI251
+S'hin'
+p122
+sI254
+S'ca'
+p123
+sI273
+S'\x80\x9d'
+p124
+sI287
+S'en'
+p125
+sI292
+S'pe'
+p126
+s.
