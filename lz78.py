@@ -1,30 +1,43 @@
 #import pickle
+import codecs
+import sys
 
-file_input = raw_input();
 dictionary = {};
 dictionary2 = {};
 position = 1;
 buf = "";
 tupl = [];
+
+fileName = sys.argv[1]
+inputFile = codecs.open(fileName, encoding='utf-8', mode='r')
+outputFile = codecs.open(fileName + '.lz78', encoding='utf-8', mode='w')
+def writeFile(index, letter):
+	outputFile.write(unichr(index))
+	outputFile.write(letter)  
+
 #now the EOF happens when we meet a new paragraph
-for c in file_input:
-    if c is None:  
-        break;
-    buf += c;
-    if buf not in dictionary:
-        dictionary[buf] = position;
-        position += 1;
-        if len(buf) == 1:
-            tupl += (0,buf);
-        else:
-            char = buf[:-1];
-            pos = dictionary[char];
-            tupl += (pos, buf[-1]);
-        buf = "";
+while True:
+	c = inputFile.read(1)
+	print c,
+	buf += c;
+
+	if buf not in dictionary:
+		dictionary[buf] = position;
+		position += 1;
+		if len(buf) == 1:
+			writeFile(0,buf);
+		elif len(buf) == 0:
+			writeFile(pos, '');
+		else:
+			char = buf[:-1];
+			pos = dictionary[char];
+			writeFile(pos, buf[-1]);
+		buf = "";
+
+	if c is None or len(c) == 0:
+		break;
+
 # for i in range(0,len(tupl),2):
 #     if i == int:
 #         tupl[i] = alphabet[item]
-outputFile = open('out.txt','wr')
-for item in tupl:
-    outputFile.write("%s\n" % item)
 #print tupl
