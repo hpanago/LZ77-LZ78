@@ -2,19 +2,11 @@
 import sys
 import codecs
 import math
+import string
 
 fileName = sys.argv[1]
 inputFile = codecs.open(fileName, encoding='utf-8', mode='r')
 outputFile = codecs.open(fileName + '.lz77', encoding='utf-8', mode='w')
-
-def elegantPair(x, y):
-	if (x>=y):
-		return x*x + x + y
-	else:
-		return y*y + x
-
-def cantorPair(x, y):
-	return (x*x+3*x+2*x*y+y+y*y)/2
 
 def writeFile(index, size, letter):
 
@@ -36,27 +28,27 @@ prev = ""
 
 
 def findIndex(prev, data):
-	for index in range(0, len(prev)):
-		maxsize = min(len(prev)-index, 256)
-		for size in range(maxsize, 0, -1):
-			if prev[index: index+size] == data[0: size]:
-				return (index, size) 
+	maxsize = min(len(prev), 512, len(data))
+	for size in range(maxsize, 0, -1):
+		index = string.find(prev, data[:size])
+		if index > -1:
+			return (index, size) 
 	return (0, 0)
 
 
 step = 0
-print data
+#print data
 while len(data) > 0:
-	print 'step =', step 
+	#print 'step =', step 
 	(index, size) = findIndex(prev, data)
 
 	#handle special case end of stream	
 	if size >= len(data):
-		letter = '\x00'
+		letter = ''
 	else:
 		letter = data[size]
 	
-	print (index, size)
+	#print (index, size)
 	writeFile(index, size, letter)
 	
 

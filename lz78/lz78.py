@@ -18,16 +18,16 @@ def writeFile(index, letter):
 #now the EOF happens when we meet a new paragraph
 while True:
 	c = inputFile.read(1)
-	print c,
+	#print c,
 	buf += c;
 
 	if buf not in dictionary:
 		dictionary[buf] = position;
 		position += 1;
 		if len(buf) == 1:
-			writeFile(0,buf);
+			writeFile(0, buf);
 		elif len(buf) == 0:
-			writeFile(pos, '');
+			writeFile(0, '');
 		else:
 			char = buf[:-1];
 			pos = dictionary[char];

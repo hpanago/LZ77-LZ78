@@ -1,10 +1,11 @@
 import codecs
+import sys 
 
 tupl = [];
 lista = [];
-alphabet = "ABCDEFGHIJKLMNOPQRSTWXYZabcdefgh"
 
-outputFile = codecs.open('testText.lz78', encoding='utf-8', mode='r')
+fileName = sys.argv[1]
+outputFile = codecs.open(fileName, encoding='utf-8', mode='r')
 
 while True:
 	c = outputFile.read(1)
@@ -14,7 +15,7 @@ while True:
 	index = ord(c)
 	letter = outputFile.read(1)
 
-	print index, letter
+	#print index, letter
 
 	if index == 0:
 		lista.append(letter)
@@ -25,4 +26,8 @@ while True:
 string = ""
 for i in lista:
     string += i;
-print string
+
+outputFile = codecs.open(fileName.strip('.lz78') + ".decompressed78", encoding='utf-8', mode='w')
+
+outputFile.write(string)
+

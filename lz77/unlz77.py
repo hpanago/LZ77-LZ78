@@ -9,26 +9,6 @@ fileName = sys.argv[1]
 
 outputFile = codecs.open(fileName, encoding='utf-8', mode='r')
 
-def cantorPair(x, y):
-	return 1/2*(x+y)*(x+y+1)*y;
-
-def reverseCantor(z):
-
-	#print z
-
-	i = (-1 + math.sqrt(1+8*z))/2
-	i = math.floor(i)
-
-	x = z - (i + i*i)/2
-
-	y = (i * ( 3 + i ))/2 -z
-
-	return (x,y)
-
-# def writeFile(index, size, letter):
-# 	outputFile.write(unichr(cantorPair(size,index)))
-# 	outputFile.write(letter)  
-
 data = ""
 
 while True:
@@ -53,10 +33,12 @@ while True:
 
 	data += data[index:index+size] + letter
 
-#print data
-outputFile = codecs.open(fileName.strip('.lz77' + "decompressed77", encoding='utf-8', mode='w')
+outputFile = codecs.open(fileName.strip('.lz77') + ".decompressed77", encoding='utf-8', mode='w')
 outputFile.write(data)
 
+
+
+#print data
 
 # 	if index == 0:
 # 		lista.append(letter)
